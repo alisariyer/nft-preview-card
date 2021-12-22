@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 :root {
     --cyan: hsl(178, 100%, 50%);
     --blue-soft: hsl(215, 51%, 70%);
     --blue-main-bg: hsl(217, 54%, 11%);
     --blue-card-bg: hsl(216, 50%, 16%);
     --blue-line: hsl(215, 32%, 27%);
-    --white: hsl(0, 0%, 100%);
-
+    --white-soft: hsl(0, 0%, 60%);
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semibold: 600;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
 }
 *, ::before, ::after {
     margin: 0;
@@ -34,6 +40,17 @@ img {
     border-radius: 20px;
 }
 .imgWrap {
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
+    font-size: 0;
+}
+h1 {
+    font-size: 1.3rem;
+    color: white;
+    margin: 24px 0 12px;
+}
+p {
+    color: var(--white-soft);
+    font-weight: var(--font-light);
 }
