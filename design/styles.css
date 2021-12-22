@@ -1,3 +1,39 @@
 :root {
-    
+    --cyan: hsl(178, 100%, 50%);
+    --blue-soft: hsl(215, 51%, 70%);
+    --blue-main-bg: hsl(217, 54%, 11%);
+    --blue-card-bg: hsl(216, 50%, 16%);
+    --blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+}
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cardWrap {
+    min-width: 300px;
+    width: 400px;
+    height: 600px;
+    background-color: var(--blue-card-bg);
+    padding: 25px;
+    border-radius: 20px;
+}
+.imgWrap {
+    border-radius: 20px;
+    overflow: hidden;
 }
