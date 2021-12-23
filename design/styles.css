@@ -2,6 +2,7 @@
 
 :root {
     --cyan: hsl(178, 100%, 50%);
+    --cyan-soft: hsla(178, 100%, 50%, 0.6);
     --blue-soft: hsl(215, 51%, 70%);
     --blue-main-bg: hsl(217, 54%, 11%);
     --blue-card-bg: hsl(216, 50%, 16%);
@@ -12,11 +13,15 @@
     --font-semibold: 600;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
+    letter-spacing: .2px;
 }
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:hover {
+    cursor:pointer;
 }
 body {
     width: 100%;
@@ -45,11 +50,33 @@ img {
     border-radius: 16px;
     overflow: hidden;
     font-size: 0;
+    position: relative;
+}
+.imgWrap:hover .previewWrap {
+    background-color: var(--cyan-soft);
+    visibility: visible;
+}
+.previewWrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.previewWrap > img {
+    width: 50px;
 }
 h1 {
     font-size: 1.3rem;
     color: white;
     margin: 24px 0 12px;
+}
+h1:hover {
+    color: var(--cyan);
 }
 p {
     color: var(--white-soft);
@@ -98,4 +125,7 @@ p {
 }
 #userFullName {
     color: white;
+}
+#userFullName:hover {
+    color: var(--cyan);
 }
