@@ -15,27 +15,33 @@
     font-size: 18px;
     letter-spacing: .2px;
 }
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :hover {
-    cursor:pointer;
+    cursor: pointer;
 }
+
 body {
     width: 100%;
     height: 100vh;
     background-color: var(--blue-main-bg);
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    position: relative;
 }
+
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
 .cardWrap {
     min-width: 300px;
     width: 360px;
@@ -45,6 +51,7 @@ img {
     padding: 25px;
     border-radius: 20px;
 }
+
 .imgWrap {
     width: 100%;
     border-radius: 16px;
@@ -52,10 +59,12 @@ img {
     font-size: 0;
     position: relative;
 }
+
 .imgWrap:hover .previewWrap {
     background-color: var(--cyan-soft);
     visibility: visible;
 }
+
 .previewWrap {
     position: absolute;
     top: 0;
@@ -67,21 +76,26 @@ img {
     align-items: center;
     visibility: hidden;
 }
-.previewWrap > img {
+
+.previewWrap>img {
     width: 50px;
 }
+
 h1 {
     font-size: 1.3rem;
     color: white;
     margin: 24px 0 12px;
 }
+
 h1:hover {
     color: var(--cyan);
 }
+
 p {
     color: var(--white-soft);
     font-weight: var(--font-light);
 }
+
 .statusWrap {
     width: 100%;
     font-size: 1rem;
@@ -91,25 +105,30 @@ p {
     padding: 20px 0;
     border-bottom: 1px solid var(--blue-line);
 }
+
 .etheriumWrap {
     display: flex;
     align-items: center;
     color: var(--cyan);
 }
-.etheriumWrap > img {
+
+.etheriumWrap>img {
     width: 12px;
     margin-right: 8px;
 }
+
 .daysWrap {
     display: flex;
     align-items: center;
     color: var(--blue-soft);
 }
-.daysWrap > img{
+
+.daysWrap>img {
     width: 15px;
     height: auto;
     margin-right: 8px;
 }
+
 .footerWrap {
     display: flex;
     justify-content: flex-start;
@@ -117,15 +136,30 @@ p {
     margin: 20px 0 0;
     color: var(--white-soft);
 }
-.footerWrap > img {
+
+.footerWrap>img {
     width: 35px;
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 16px;
 }
+
 #userFullName {
     color: white;
 }
+
 #userFullName:hover {
     color: var(--cyan);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--white-soft);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
