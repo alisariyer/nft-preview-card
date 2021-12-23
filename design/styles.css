@@ -33,15 +33,16 @@ img {
 }
 .cardWrap {
     min-width: 300px;
-    width: 400px;
-    height: 600px;
+    width: 360px;
+    height: auto;
     background-color: var(--blue-card-bg);
+    margin: 20px;
     padding: 25px;
     border-radius: 20px;
 }
 .imgWrap {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
     font-size: 0;
 }
@@ -53,4 +54,48 @@ h1 {
 p {
     color: var(--white-soft);
     font-weight: var(--font-light);
+}
+.statusWrap {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--blue-line);
+}
+.etheriumWrap {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+}
+.etheriumWrap > img {
+    width: 12px;
+    margin-right: 8px;
+}
+.daysWrap {
+    display: flex;
+    align-items: center;
+    color: var(--blue-soft);
+}
+.daysWrap > img{
+    width: 15px;
+    height: auto;
+    margin-right: 8px;
+}
+.footerWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 0;
+    color: var(--white-soft);
+}
+.footerWrap > img {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+#userFullName {
+    color: white;
 }
