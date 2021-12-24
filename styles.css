@@ -22,10 +22,6 @@
     box-sizing: border-box;
 }
 
-:hover {
-    cursor: pointer;
-}
-
 img {
     width: 100%;
     height: auto;
@@ -67,6 +63,7 @@ body {
 .imgWrap:hover .previewWrap {
     background-color: var(--cyan-soft);
     visibility: visible;
+    cursor: pointer;
 }
 
 .previewWrap {
